@@ -1,153 +1,259 @@
-/* Базовые стили для контейнера */
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: Lora, sans-serif;
-}
-/* Стили для шапки */
-.header__container {
-    background-color: #659DBD;
-    border-bottom: 1px solid #FBEEC1;
-    padding: 0 20px;
-    overflow: hidden;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal
 }
 
-/* Логотип - слева */
+
+#header {
+    background-color: #659DBD;
+    width: 98%;
+    height: 80px;
+    padding-top: 10px;
+    display: block; /* Оставляем block вместо flex */
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .header__logo {
-    float: left;
-    width: 30%;
-    padding: 15px 0;
-    line-height: 40px; /* Высота линии равна высоте картинки */
+  float: left;
+  padding-left: 40px;
+  height: 80px; /* Высота как у header */
 }
 
 .header__logo img {
-    width: 40px;
-    height: 40px;
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 10px;
+  width: 70px;
+  height: 70px;
+  display: inline-block;
+  vertical-align: middle; /* Выравнивание по вертикали */
 }
 
 .header__logo .title {
-    display: inline-block;
-    vertical-align: middle;
-    color: #333;
-    margin: 0;
+  display: inline-block;
+  vertical-align: middle; /* Выравнивание по вертикали */
+  font-size: 23px;
+  color: #333;
+  margin-left: 15px; /* Отступ от картинки */
+  line-height: normal; /* Сбрасываем line-height для текста */
 }
 
+/* Навигация по центру */
 .header__nav {
-    float: left;
-    width: 40%;
-    text-align: center;
-    padding-top: 10px;
+  float: left;
+  display: block;
+  margin-left: 400px; /* отодвигаем от title */
+  height: 70px;
+  line-height: 70px; /* вертикальное выравнивание */
 }
 
 .header__nav a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #333;
-    font-weight: 400;
-
+  text-decoration: none;
+  color: #333;
+  margin: 0 20px; /* отступы между пунктами меню */
+  font-size: 20px;
 }
 
 .header__nav a:hover {
-    color: #daad86;
+  color: #daad86;
 }
-
 
 .header__right {
-    float: right;
-    width: 20%;
-    text-align: right;
-    padding-top: 20px;
+  float: right;
+  display: block;
+  padding-top: 15px;
+  height: 80px; /* вертикальное выравнивание */
+  margin-right: 40px;
 }
 
-.social-icon, .button {
-    display: inline-block;
-    vertical-align: middle;
+.header__right .button {
+  display: inline-block;
+  font-size: 20px;
+  vertical-align: middle;
+  text-decoration: none;
+  padding: 8px 16px; /* Добавьте отступы */
+  background-color: #daad86; /* Цвет фона для видимости */
+  color: white;
+  border-radius: 4px;
 }
 
 .social-icon {
-    margin-right: 15px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 20px;
+  text-decoration: none;
+  color: #333;
+  margin-right: 10px;
 }
 
-/* Основная часть */
-.main {
-    padding: 15px;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    background-color: #fbeec1;
+#main{
+      background-color: #FBEEC1;
+      width: 98%;
+      height: 1200px;
+      padding-top: 10px;
+      display: block; /* Оставляем block вместо flex */
+      margin-left: auto;
+      margin-right: auto;
 }
 
-.hero img{
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-    border-radius: 15px;
-    background-color: #f8f8f8;
-    display: block;
+.hero {
+  height: 60%;
+  margin: 20px;
+  overflow: hidden;
+  position: relative; /* Добавьте это для позиционирования телефона */
 }
 
-.hero__overlay {
-    position: absolute;
-    top: 95%;
-    left: 36%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    width: 70%;
-}
-
-/* Нижняя строка с кнопкой и телефоном */
 .stock_button {
-    padding: 20px;
-    text-align: left;
-    overflow: hidden;
-    display: inline-block;
-    color: black;
-    padding: 12px 25px;
-    text-decoration: none;
-    font-size: 18px;
-    margin-left: 20px;
+  float: left;
+  padding: 12px 24px;
+  background-color: #daad86;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 20px;
+  margin: 300px 140px 0 20px; /* Увеличьте верхний отступ чтобы опустить кнопку */
+}
+
+.hero img {
+  display: block;
+  margin: 0 auto;
+  float: left;
+  height: 700px;
+  width: 1200px;
+  /* Размеры остаются как есть */
 }
 
 .phone {
-    display: inline-block;
-    color: black;
-    font-size: 18px;
-    font-weight: bold;
-    float: right;
-    margin-right: 20px;
-    padding: 10px 0;
+  float:right;
+  margin: 300px 20px 0 10px;
+  color: #333;
+  height: 70px;
+  width: 190px;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 8px 16px 8px 16px;
+  border-radius: 4px;
 }
 
-/* Галерея работ */
-.gallery {
-    margin-bottom: 50px;
+.gallery{
+  height: 40%;
+  margin: 20px;
+  overflow: hidden;
+  position: relative;
+
 }
 
-.gallery__grid {
-    display: block;
-    text-align: center;
+.gallery .title{
+  display: inline-block;
+  vertical-align: middle; /* Выравнивание по вертикали */
+  font-size: 30px;
+  color: #333;
+  margin:10px 40% 20px;
+
 }
 
-.gallery__item {
-    display: inline-block;
-    width: 20%;
-    margin: 2%;
-    background-color: #f8f8f8;
-    border-radius: 10px;
-    overflow: hidden;
-    vertical-align: top;
+.gallery img{
+  margin: 0 30px;
+  float: left;
+  height: 300px;
+  width: 400px;
 }
 
-.gallery__item img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    display: block;
+#footer {
+  background-color: #659DBD;
+  width: 98%;
+  height: 150px;
+  padding: 20px 0;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
 }
+
+.footer__left {
+  float: left;
+  width: 30%;
+  padding-left: 0px;
+  text-align: center;
+}
+
+.footer__logo {
+  display: inline-block;
+  text-align: center;
+}
+
+.footer__logo img {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
+.footer__title {
+  font-size: 24px;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+}
+
+.footer__center {
+  float: left;
+  width: 40%;
+  text-align: center;
+}
+
+.footer__nav-title {
+  font-size: 22px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.footer__nav {
+  display: inline-block;
+  text-align: left;
+  text-align: center;
+}
+
+.footer__nav a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.footer__nav a:hover {
+  color: #daad86;
+}
+
+.footer__right {
+  float: right;
+  width: 30%;
+  text-align: center;
+  padding: -30px 40px 0 0; /* Добавьте отступ сверху */
+}
+
+.footer__dog {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #daad86;
+  margin: 0 auto; /* Центрируем */
+}
+
+.footer__dog img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Остальные стили (.footer__logo, .footer__nav, .footer__dog) остаются такими же */
