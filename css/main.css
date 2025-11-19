@@ -1,0 +1,153 @@
+/* Базовые стили для контейнера */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: Lora, sans-serif;
+}
+/* Стили для шапки */
+.header__container {
+    background-color: #659DBD;
+    border-bottom: 1px solid #FBEEC1;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+/* Логотип - слева */
+.header__logo {
+    float: left;
+    width: 30%;
+    padding: 15px 0;
+    line-height: 40px; /* Высота линии равна высоте картинки */
+}
+
+.header__logo img {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.header__logo .title {
+    display: inline-block;
+    vertical-align: middle;
+    color: #333;
+    margin: 0;
+}
+
+.header__nav {
+    float: left;
+    width: 40%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.header__nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+
+}
+
+.header__nav a:hover {
+    color: #daad86;
+}
+
+
+.header__right {
+    float: right;
+    width: 20%;
+    text-align: right;
+    padding-top: 20px;
+}
+
+.social-icon, .button {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.social-icon {
+    margin-right: 15px;
+}
+
+/* Основная часть */
+.main {
+    padding: 15px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fbeec1;
+}
+
+.hero img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 15px;
+    background-color: #f8f8f8;
+    display: block;
+}
+
+.hero__overlay {
+    position: absolute;
+    top: 95%;
+    left: 36%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 70%;
+}
+
+/* Нижняя строка с кнопкой и телефоном */
+.stock_button {
+    padding: 20px;
+    text-align: left;
+    overflow: hidden;
+    display: inline-block;
+    color: black;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.phone {
+    display: inline-block;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    float: right;
+    margin-right: 20px;
+    padding: 10px 0;
+}
+
+/* Галерея работ */
+.gallery {
+    margin-bottom: 50px;
+}
+
+.gallery__grid {
+    display: block;
+    text-align: center;
+}
+
+.gallery__item {
+    display: inline-block;
+    width: 20%;
+    margin: 2%;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+.gallery__item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
