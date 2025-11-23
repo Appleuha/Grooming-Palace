@@ -93,78 +93,179 @@ body {
   margin-right: 10px;
 }
 
-#main{
-      background-color: #FBEEC1;
-      width: 98%;
-      height: 1200px;
-      padding-top: 10px;
-      display: block; /* Оставляем block вместо flex */
-      margin-left: auto;
-      margin-right: auto;
+/* Стили для основного контента */
+#main {
+    background-color: #FBEEC1;
+    width: 98%;
+    padding: 40px 0;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 60vh;
 }
 
-.hero {
-  height: 60%;
-  margin: 20px;
-  overflow: hidden;
-  position: relative; /* Добавьте это для позиционирования телефона */
+.about-section {
+    width: 90%;
+    margin: 0 auto;
 }
 
-.stock_button {
-  float: left;
-  padding: 12px 24px;
-  background-color: #daad86;
-  color: white;
-  text-decoration: none;
-  border-radius: 4px;
-  font-size: 20px;
-  margin: 300px 140px 0 20px; /* Увеличьте верхний отступ чтобы опустить кнопку */
+/* Первый прямоугольник - горизонтальный */
+.about-intro {
+    background-color: white;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
-.hero img {
-  display: block;
-  margin: 0 auto;
-  float: left;
-  height: 700px;
-  width: 1200px;
-  /* Размеры остаются как есть */
+.about-title-block {
+    background-color: #659DBD;
+    padding: 40px 30px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 3px solid #FBEEC1;
 }
 
-.phone {
-  float:right;
-  margin: 300px 20px 0 10px;
-  color: #333;
-  height: 70px;
-  width: 190px;
-  font-size: 20px;
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 8px 16px 8px 16px;
-  border-radius: 4px;
+.about-main-title {
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
 }
 
-.gallery{
-  height: 40%;
-  margin: 20px;
-  overflow: hidden;
-  position: relative;
-
+.about-text-block {
+    padding: 40px;
+    background-color: #daad86;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #b98d65;
+    border-top: none;
+    border-radius: 0 0 15px 15px;
 }
 
-.gallery .title{
-  display: inline-block;
-  vertical-align: middle; /* Выравнивание по вертикали */
-  font-size: 30px;
-  color: #333;
-  margin:10px 40% 20px;
-
+.intro-text {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 0;
 }
 
-.gallery img{
-  margin: 0 30px;
-  float: left;
-  height: 300px;
-  width: 400px;
+/* Второй прямоугольник - основной контент */
+.about-content {
+    background-color: white;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ddd;
 }
+
+.section-title {
+    color: #659DBD;
+    font-size: 28px;
+    margin-bottom: 25px;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #FBEEC1;
+}
+
+.history-text {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: justify;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border-left: 4px solid #659DBD;
+}
+
+/* Преимущества - в прямоугольниках */
+.advantages-grid {
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.advantage-item {
+    background-color: #FBEEC1;
+    padding: 25px;
+    border-radius: 10px;
+    border: 2px solid #e8d4b0;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    float: left;
+}
+
+.advantage-item:nth-child(odd) {
+    float: left;
+    width: 48%;
+    margin-right: 2%;
+}
+
+.advantage-item:nth-child(even) {
+    float: right;
+    width: 48%;
+    margin-left: 2%;
+}
+
+.advantage-item:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.advantage-item h3 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.advantage-item p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Очистка float для advantages-grid */
+.advantages-grid:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Прямоугольник с миссией */
+.mission-section {
+    background-color: #daad86;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    clear: both;
+    border: 2px solid #b98d65;
+    margin-top: 20px;
+}
+
+.mission-section h3 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.mission-text {
+    color: #333;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 1.5;
+    margin: 0;
+    font-weight: 500;
+}
+
+
 
 #footer {
   background-color: #659DBD;
@@ -238,7 +339,7 @@ body {
   float: right;
   width: 30%;
   text-align: center;
-  padding: -30px 40px 0 0;
+  padding: -30px 40px 0 0; /* Добавьте отступ сверху */
 }
 
 .footer__dog {
@@ -247,7 +348,7 @@ body {
   border-radius: 50%;
   overflow: hidden;
   border: 3px solid #daad86;
-  margin: 0 auto; 
+  margin: 0 auto; /* Центрируем */
 }
 
 .footer__dog img {
