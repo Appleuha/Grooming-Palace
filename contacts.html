@@ -48,12 +48,40 @@
         </div>
       </div>
 
+      <!-- Форма обратной связи -->
+     <div class="feedback-section">
+       <h2 class="feedback-title">Обратная связь</h2>
+       <form class="feedback-form">
+         <div class="form-group">
+           <label for="name">Ваше имя:</label>
+           <input type="text" id="name" name="name" required placeholder="Введите ваше имя">
+         </div>
+
+         <div class="form-group">
+           <label for="email">Адрес электронной почты:</label>
+           <input type="email" id="email" name="email" required placeholder="example@mail.ru">
+         </div>
+
+         <div class="form-group">
+           <label for="message">Текст сообщения:</label>
+           <textarea id="message" name="message" required placeholder="Введите ваше сообщение..."></textarea>
+         </div>
+
+         <button type="submit" class="submit-button">Отправить сообщение</button>
+       </form>
+     </div>
+
       <div class="map-section">
         <h2 class="map-title">Схема проезда</h2>
         <div class="map-container">
-          <img src="img\map-screenshot.png" alt="Схема проезда к Grooming Palace" class="map-image">
+        <div class="map-wrapper">
+            <!-- Ваш код Яндекс.Карты -->
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8aa4441497f6c1a3daf2a72399e9dfe1ef4107e518269f12cf0602035c98594c&amp;width=100%25&amp;height=651&amp;lang=ru_RU&amp;scroll=true"></script>
         </div>
-      </div>
+    </div>
+
+
+</div>
     </div>
   </main>
 
