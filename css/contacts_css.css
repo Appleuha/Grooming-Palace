@@ -358,3 +358,31 @@ body {
 .submit-button:hover {
     background-color: #bc8c5f;
 }
+
+/* Стили для блока "Поделиться" */
+.share-section {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    border: 2px solid #ddd;
+    text-align: center;
+}
+
+.share-title {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #FBEEC1;
+}
+
+.share-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60px;
+}
